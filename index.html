@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Rick and Morty Characters</h1>
+
+    <section id="info">
+        <p>
+            <button onclick="hideHumans">Hide Humans</button>
+            <button onclick="hideAliens">Hide Aliens</button>
+            <button onclick="showAll()">Show All</button>
+        </p>
+    </section>
+    <div class = "character-grid">
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/1.jpeg" target="_blank" data-lightbox="human" data-title="rick" data-alt="Person with wild hair">
+              <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" width="100" alt="Rick Sanchez">
+            </a>
+            <h3>Rick Sanchez</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (C-137)</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/2.jpeg" target="_blank" data-lightbox="human" data-title="morty" data-alt="A weird boy">
+                <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Morty Smith</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/3.jpeg" target="_blank" data-lightbox="human" data-title="summer smith" data-alt="redhead women">
+                <img src="https://rickandmortyapi.com/api/character/avatar/3.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Summer Smith</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (Replacement Dimension)</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/4.jpeg" target="_blank" data-lightbox="human" data-title="beth smith" data-alt="blonde woman">
+                <img src="https://rickandmortyapi.com/api/character/avatar/4.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Beth Smith</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (Replacement Dimension)</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/5.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/5.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Jerry Smith</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (Replacement Dimension)</dd></dl>
+        </div>
+
+        <div class="character alien">
+            <a href="https://rickandmortyapi.com/api/character/avatar/6.jpeg" target="_blank" data-lightbox="alien">
+                <img src="https://rickandmortyapi.com/api/character/avatar/6.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Abadango Cluster Princess</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Alien</dd><dt>Origin:</dt><dd>Abadango</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/7.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/7.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Abradolf Lincler</h3>
+            <dl><dt>Status:</dt><dd>unknown</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (Replacement Dimension)</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/8.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/8.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Adjudicator Rick</h3>
+            <dl><dt>Status:</dt><dd>Dead</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/9.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/9.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Agency Director</h3>
+            <dl><dt>Status:</dt><dd>Dead</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (Replacement Dimension)</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/10.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/10.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Alan Rails</h3>
+            <dl><dt>Status:</dt><dd>Dead</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/11.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/11.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Albert Einstein</h3>
+            <dl><dt>Status:</dt><dd>Dead</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (C-137)</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/12.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/12.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Alexander</h3>
+            <dl><dt>Status:</dt><dd>Dead</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (C-137)</dd></dl>
+        </div>
+
+        <div class="character alien">
+            <a href="https://rickandmortyapi.com/api/character/avatar/13.jpeg" target="_blank" data-lightbox="alien">
+                <img src="https://rickandmortyapi.com/api/character/avatar/13.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Alien Googah</h3>
+            <dl><dt>Status:</dt><dd>unknown</dd><dt>Species:</dt><dd>Alien</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character alien">
+            <a href="https://rickandmortyapi.com/api/character/avatar/14.jpeg" target="_blank" data-lightbox="alien">
+                <img src="https://rickandmortyapi.com/api/character/avatar/14.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Alien Morty</h3>
+            <dl><dt>Status:</dt><dd>unknown</dd><dt>Species:</dt><dd>Alien</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character alien">
+            <a href="https://rickandmortyapi.com/api/character/avatar/15.jpeg" target="_blank" data-lightbox="alien">
+                <img src="https://rickandmortyapi.com/api/character/avatar/15.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Alien Rick</h3>
+            <dl><dt>Status:</dt><dd>unknown</dd><dt>Species:</dt><dd>Alien</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character alien">
+            <a href="https://rickandmortyapi.com/api/character/avatar/16.jpeg" target="_blank" data-lightbox="alien">
+                <img src="https://rickandmortyapi.com/api/character/avatar/16.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Amish Cyborg</h3>
+            <dl><dt>Status:</dt><dd>Dead</dd><dt>Species:</dt><dd>Alien</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/17.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/17.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Annie</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>Earth (C-137)</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/18.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/18.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Antenna Morty</h3>
+            <dl><dt>Status:</dt><dd>Alive</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/19.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/19.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Antenna Rick</h3>
+            <dl><dt>Status:</dt><dd>unknown</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+
+        <div class="character human">
+            <a href="https://rickandmortyapi.com/api/character/avatar/20.jpeg" target="_blank" data-lightbox="human">
+                <img src="https://rickandmortyapi.com/api/character/avatar/20.jpeg" width="100" alt="Morty Smith">
+            </a>
+            <h3>Ants in my Eyes Johnson</h3>
+            <dl><dt>Status:</dt><dd>unknown</dd><dt>Species:</dt><dd>Human</dd><dt>Origin:</dt><dd>unknown</dd></dl>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"> </script>
+    <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+    </script>
+</body>
+</html>
